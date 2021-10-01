@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <servlet>
+        <servlet-name>addDestination</servlet-name>
+        <servlet-class>servlet.addDestination</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>acceuil</servlet-name>
+        <servlet-class>servlet.Acceuil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addReservation</servlet-name>
+        <servlet-class>servlet.addReservation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consulterDestination</servlet-name>
+        <servlet-class>servlet.consulterDestination</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editDestination</servlet-name>
+        <servlet-class>servlet.editDestination</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>destination</servlet-name>
+        <servlet-class>servlet.dellDestination</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dellReservation</servlet-name>
+        <servlet-class>servlet.dellReservation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consulterReservation</servlet-name>
+        <servlet-class>servlet.consulterReservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addDestination</servlet-name>
+        <url-pattern>/Add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>acceuil</servlet-name>
+        <url-pattern>/Acceuil</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addReservation</servlet-name>
+        <url-pattern>/AddReservation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consulterDestination</servlet-name>
+        <url-pattern>/Consulter_Destination</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editDestination</servlet-name>
+        <url-pattern>/Edit_destination</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>destination</servlet-name>
+        <url-pattern>/Dell_destination</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dellReservation</servlet-name>
+        <url-pattern>/Dell_reservation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consulterReservation</servlet-name>
+        <url-pattern>/Consulter_reservation</url-pattern>
+    </servlet-mapping>
+
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+            <include-prelude>/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
